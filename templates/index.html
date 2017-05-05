@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2D Tile Simulator</title>
+
+
+	<script  type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/tile-editor.js') }}"></script>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+<div class="row-container">
+
+	{% include 'tile-editor.html' %}
+	
+	
+
+	<div id="simulator-wrapper" class="simulator-flex">
+
+		<div id="simulator-container">
+			<!-- Hovers -->
+			<div id="wall-hover" class="hover" data-part="wall"></div>
+			<div id="floor-hover" class="hover" data-part="floor"></div>
+
+
+			<!-- Image -->
+			<div id="env-container" class="container">
+				<img src="{{ url_for( 'static', filename='assets/env/coffee.png' ) }}">
+
+			</div>
+
+
+			<!-- Parts -->
+			<div id="wall-container" class="container" data-part="wall">
+				<div class="background"></div>
+			</div>
+
+			<div id="floor-container" class="container" data-part="floor">
+				<div class="background"></div>
+			</div>
+		</div>
+		<img id="blurred-background" src="{{ url_for( 'static', filename='assets/coffee.jpg' ) }}">
+
+		<!-- <div id="description-container">
+			Selected: <span id="selected-text"></span>
+		</div> -->
+
+
+	</div>
+	
+</div>
+
+	
+
+
+
+
+	
+
+
+
+</body>
+</html>

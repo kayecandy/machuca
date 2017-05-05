@@ -1,0 +1,266 @@
+<div id="tile-editor-wrapper" class="simulator-flex selection">
+	<img id="logo" src="{{ url_for( 'static', filename='assets/logo.png' ) }}">
+
+
+	<div id="tile-selections-container">
+		<h1 id="tile-editor-title">Tile Selections</h1>
+
+
+		<div id="tile-container">
+			<img class="tile" src="{{ url_for( 'static', filename='assets/tiles/tile0.jpg' ) }}" data-itile="0">
+			<img class="tile" src="{{ url_for( 'static', filename='assets/tiles/tile1.jpg' ) }}" data-itile="1">
+			<img class="tile" src="{{ url_for( 'static', filename='assets/tiles/tile2.jpg' ) }}" data-itile="2">
+			<img class="tile" src="{{ url_for( 'static', filename='assets/tiles/tile3.jpg' ) }}" data-itile="3">
+			
+		</div>
+
+	</div>
+
+
+
+	<div id="tile-editor-container-0" class="tile-editor-container" data-itile="0">
+
+		<div class="tile-canvas-container">
+			<canvas class="tile-editor-background canvas-part" data-value="white"></canvas>
+			<canvas class="tile-editor-pattern-0 canvas-part" data-value="#385d3d"></canvas>
+			<canvas class="tile-editor-pattern-1 canvas-part" data-value="#c4b7ac"></canvas>
+			<canvas class="tile-editor-pattern-2 canvas-part" data-value="#212127"></canvas>
+			<canvas class="tile-editor-grout canvas-part" data-value="#343933"></canvas>
+		</div>
+		
+		<br><br>
+		<div class="colors-container">
+
+			<div class="color-set" data-part="0">
+				<span class="color-set-title">Color 1</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+
+
+			</div>
+
+			<div class="color-set" data-part="1">
+				<span class="color-set-title">Color 2</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="2">
+				<span class="color-set-title">Color 3</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="grout">
+				<span class="color-set-title">Grout</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			
+		</div>
+
+		<button class="tile-editor-finish-button" type="button">Finish</button>
+
+	</div>
+
+	<div id="tile-editor-container-1" class="tile-editor-container" data-itile="1">
+
+		<div class="tile-canvas-container">
+			<canvas class="tile-editor-background canvas-part" data-value="#e0e3e6"></canvas>
+			<canvas class="tile-editor-pattern-0 canvas-part" data-value="#212127"></canvas>
+			<canvas class="tile-editor-grout canvas-part" data-value="#343933"></canvas>
+		</div>
+		
+		<br><br>
+		<div class="colors-container">
+			<div class="color-set" data-part="background">
+				<span class="color-set-title">Background</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="0">
+				<span class="color-set-title">Pattern</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="grout">
+				<span class="color-set-title">Grout</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			
+		</div>
+
+		<button class="tile-editor-finish-button" type="button">Finish</button>
+
+	</div>
+
+	<div id="tile-editor-container-2" class="tile-editor-container" data-itile="2">
+
+		<div class="tile-canvas-container">
+			<canvas class="tile-editor-background canvas-part" data-value="#1b2236"></canvas>
+			<canvas class="tile-editor-pattern-0 canvas-part" data-value="#e0e3e6"></canvas>
+			<canvas class="tile-editor-grout canvas-part" data-value="#1b2236"></canvas>
+		</div>
+		
+		<br><br>
+		<div class="colors-container">
+			<div class="color-set" data-part="background">
+				<span class="color-set-title">Background</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="0">
+				<span class="color-set-title">Pattern</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="grout">
+				<span class="color-set-title">Grout</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			
+		</div>
+
+		<button class="tile-editor-finish-button" type="button">Finish</button>
+
+	</div>
+
+	<div id="tile-editor-container-3" class="tile-editor-container" data-itile="3">
+
+		<div class="tile-canvas-container">
+			<canvas class="tile-editor-background canvas-part" data-value="#1b2236"></canvas>
+			<canvas class="tile-editor-pattern-0 canvas-part" data-value="#c4b7ac"></canvas>
+			<canvas class="tile-editor-pattern-1 canvas-part" data-value="#719aac"></canvas>
+			<canvas class="tile-editor-grout canvas-part" data-value="#e0e3e6"></canvas>
+		</div>
+		
+		<br><br>
+		<div class="colors-container">
+
+			<div class="color-set" data-part="background">
+				<span class="color-set-title">Background</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="0">
+				<span class="color-set-title">Color 1</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+
+
+			</div>
+
+			<div class="color-set" data-part="1">
+				<span class="color-set-title">Color 2</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			<div class="color-set" data-part="grout">
+				<span class="color-set-title">Grout</span>
+				<div class="color" data-color="#343933"></div>
+				<div class="color" data-color="#e0e3e6"></div>
+				<div class="color" data-color="#1b2236"></div>
+				<div class="color" data-color="#719aac"></div>
+				<div class="color" data-color="#c4b7ac"></div>
+				<div class="color" data-color="#364a53"></div>
+				<div class="color" data-color="#385d3d"></div>
+				<div class="color" data-color="#212127"></div>
+			</div>
+
+			
+		</div>
+
+		<button class="tile-editor-finish-button" type="button">Finish</button>
+
+	</div>
+	
+</div>

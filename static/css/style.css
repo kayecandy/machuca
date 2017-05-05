@@ -1,0 +1,264 @@
+/* GENERAL */
+body{
+	margin: 0;
+	min-height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.row-container{
+	display: flex;
+		display: -webkit-flex;
+	width: 100vw;
+}
+
+.row-container > .simulator-flex{
+	flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		-moz-flex: 1;
+
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+/* SIMULATOR */
+#simulator-wrapper{
+	height: 100vh;
+	flex: 2;
+		-webkit-flex: 2;
+		-ms-flex: 2;
+		-moz-flex: 2;
+
+	position: relative;
+	overflow: hidden;
+
+	text-align: center;
+
+	/*background: black;	*/
+}
+
+#simulator-wrapper #blurred-background{
+	width: calc( 100% + 20px );
+	height: calc( 100% + 20px );
+	position: absolute;
+	left: -10px;
+	top:-10px;
+
+	filter: blur( 10px );
+}
+
+
+
+#simulator-container{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+
+	display: inline-block;
+}
+
+#simulator-container #env-container img{
+	width: auto;
+	height: auto;
+
+	max-height: 100vh;
+}
+
+#simulator-container .container,
+#simulator-container .hover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#simulator-container .hover{
+	z-index: 15;
+	cursor: pointer;
+}
+
+
+#simulator-container .container{
+	z-index: 5;
+	overflow: hidden;
+
+	/*transition: all 0.3s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;*/
+}
+
+#simulator-container .container .background{
+	position: absolute;
+}
+
+#simulator-container .container.hover,
+#simulator-container .container.selected{
+	opacity: 0.5 !important;
+}
+
+
+#simulator-container #env-container{
+	position: relative;
+	height: 100%;
+	width: auto;
+
+	z-index: 10;
+}
+
+#simulator-container #env-container img{
+
+}
+
+#simulator-container #wall-hover,
+#simulator-container #wall-container{
+	clip-path: polygon(0 0, 100% 0, 100% 47.5%, 0 56.35%);
+}
+
+
+#simulator-container #wall-container .background{
+	background: beige;
+    
+    width: 116%;
+    height: 58%;
+
+    top: -4%;
+    left: -8%;
+
+    background-size: 20%;
+    transform: rotateY(-3deg) skewY(-8deg);
+}
+
+#simulator-container #floor-hover,
+#simulator-container #floor-container{
+    clip-path: polygon(0 56.35%, 100% 47.5%, 100% 100%, 0 100%);
+}
+
+
+
+#simulator-container #floor-container .background {
+	background: white;
+
+    width: 184%;
+    height: 145%;
+
+	bottom: -52%;
+    left: -46%;
+
+    background-size: 17%;
+    transform: rotateX(71deg) rotateZ(18deg);
+}
+
+
+
+
+/* SIMULATOR - TILES */
+
+img.tile{
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+
+	border-radius: 15px;
+}
+
+img.tile:hover{
+	opacity: 0.8;
+}
+
+/* SIMULATOR - 3D */
+#simulator-wrapper #simulator-3d{
+	width: 100%;
+	height: 100%;
+}
+
+
+/* TILE EDITOR */
+#tile-editor-wrapper{
+	vertical-align: top;
+	background: #2c3d4f;
+	color: white;
+
+	height: 100vh;
+	padding: 20px 50px;
+
+	text-align: center;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	z-index: 10;
+}
+
+#tile-editor-wrapper #logo{
+	width: 120px;
+}
+
+
+
+#tile-editor-wrapper.selection .tile-editor-container,
+#tile-editor-wrapper.editor #tile-selections-container,
+#tile-editor-wrapper.editor .tile-editor-container:not( .selected )
+{
+	display: none;
+}
+
+
+.tile-canvas-container{
+	position: relative;
+	width: 200px;
+	height: 200px;
+
+	background-color: white;
+
+	overflow: hidden;
+	border-radius: 20px;
+	display: inline-block;
+}
+
+
+.tile-canvas-container canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* TILE EDITOR - COLORS */
+
+.colors-container .color-set-title{
+	width: 100px;
+	display: inline-block;
+}
+
+.colors-container .color-set .color{
+	display: inline-block;
+
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+	background: black;
+}
+
+
+.colors-container .color-set .color:hover{
+	opacity: 0.5;
+}
+
+.colors-container .grout-size{
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 2px;
+}
+
+.colors-container .grout-size:hover{
+	text-decoration: underline;
+}
